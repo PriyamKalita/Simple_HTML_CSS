@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport " content="width=device-width", initial-scale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Position_Absolute_Relative_Fixed_And_Sticky</title>
+        
+        <style>
+            /* Css Position : Static (Default) , Relative, Absolute, Fixed, Sticky */
+            .container{
+                border: 2px solid blue;
+                background-color: rgb(84, 157, 210);
+                height: 3444px;
+            }                  
+            .box{
+                display: inline-block;
+                border: 2px solid red;
+                width: 150px;
+                height: 150px;
+                margin: 3px;
+            }
+            #box3{
+                /* relative: Position The Element relative to its normal position and will leave a gap at its normal position*/
+                /* position: relative; */
+
+                /* absolute: Position The Element relative to the position of its first parent*/
+                /* position: absolute; */
+                /* top: 34px;
+                left: 24px; */
+
+                /* fixed: Position The Element relative to the browser window */
+                /* position : fixed;
+                bottom: 9px;
+                right: 9px; */
+
+                position: sticky;
+                top: 13px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">3</div>
+            <div class="box" id="box4">4</div>
+            </div>
+    </body>
+</html>

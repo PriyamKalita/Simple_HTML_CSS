@@ -1,0 +1,220 @@
+/* CSS Reset*/
+ *{
+    margin: 0px;;
+    padding: 0px;
+} 
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+ :root{
+    --navbar-height:59px
+} 
+
+/*Navigation Bar*/
+ 
+
+/* Navigation Bar: Logo And Image */
+ #logo{
+    margin: 34px 45px;
+}
+#logo img{
+    height: 128px;
+    margin: -26px -32px;
+    border: 3px solid red;
+    border-radius: 50px;
+}
+
+/* Navigation Bar: List Styliing */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    position: sticky;
+} 
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgb(175 144 144 / 61%);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#navbar ul{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai', cursive;
+
+}
+
+#navbar ul li a{
+    color: rgb(0, 0, 0);
+    display: block;
+    padding :3px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(45, 194, 217);
+    
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    /* padding:3px 200px; */
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('./FoodBackground.jpg') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    height: 440px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+
+#home h1{
+    color:rgb(255, 0, 0);
+    text-align: center;
+    font-family: 'Baloo Bhai', cursive;
+}
+#home p{
+    color:rgb(255, 0, 0);
+    text-align: center;
+    font: 1.5rem;
+    font-family: 'Baloo Bhai', cursive;
+
+} 
+
+/* Service Section*/
+#services{
+    margin: 34px;;
+    display: flex;
+}
+#services .box p{
+    font-family: 'Baloo Bhai', cursive;;
+}
+
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 36px 41px;
+    border-radius: 33px;
+    background-color: rgb(193, 215, 224);
+    margin-bottom: 20px;
+}
+#services .box img{
+    height: 117px;
+    margin: auto;
+    display: block;
+}
+
+#client-section{
+    position: relative;
+    height: 334px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('./FoodImage.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 100px;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('./Foodcontact.webp') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.3rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai', cursive;
+
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+    padding :10px 20px;
+}
+.h-primary{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.0rem;
+    padding: 12px; 
+}
+.h-secondary Center{
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.0rem;
+    padding: 12px; 
+}
+
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: rgb(76, 79, 145);
+    color: rgb(255, 0, 0);
+    margin: 20px;
+    font-size: 23px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+

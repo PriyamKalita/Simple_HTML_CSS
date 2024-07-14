@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BoxShadowAndTextShadow</title>
+        <style>
+            .contaier{
+                display: flex;
+            }
+            .card{
+                padding :23px 12px;
+                margin: 23px 12px;
+                /* border: 2px solid red; */
+                background-color: aquamarine;
+
+                /* box-shadow: 10px 13px rgb(128, 149, 128); */
+                /* box-shadow: -10px -13px rgb(128, 149, 128); */
+                /* box-shadow: 7px 5px 33px rgb(175, 130, 130) */
+                /* box-shadow: -7px -5px 33px rgb(175, 130, 130) */
+                /* box-shadow: -7px -5px 33px 20px rgb(175, 130, 130)*/
+
+                box-shadow: inset 3px 5px red;
+                box-shadow: 3px 5px rgb(26, 255, 0), 4px 6px red;
+            }
+
+            .card h1{
+                /* text-shadow: 3px 4px wheat; */
+                /* text-shadow: 3px 4px 5px wheat; */
+                text-shadow: -3px -4px 5px wheat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contaier">
+            <div class="card" id="card1">
+                <h1>This is HTML course</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, officia praesentium assumenda quia quo accusantium at. Ex, qui perferendis quam, adipisci maiores, ipsam cupiditate sequi ipsa ea vitae accusantium sit.</p>
+            </div>
+            <div class="card" id="card2">
+                <h1>This is CSS course</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, officia praesentium assumenda quia quo accusantium at. Ex, qui perferendis quam, adipisci maiores, ipsam cupiditate sequi ipsa ea vitae accusantium sit.</p>
+            </div>
+            <div class="card" id="card3">
+                <h1>This is JAVAScript course</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, officia praesentium assumenda quia quo accusantium at. Ex, qui perferendis quam, adipisci maiores, ipsam cupiditate sequi ipsa ea vitae accusantium sit.</p>
+            </div>
+        </div>
+    </body>
+</html>

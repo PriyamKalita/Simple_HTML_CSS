@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html leng="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date and Time</title>
+    <style>
+        .container {
+            font-size: 23px;
+            background-color: aquamarine;
+            border: 3px solid red;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        #time {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is Date and Time");
+        let now = new Date();
+        console.log(now);
+
+        let dt1 = new Date(1);
+        console.log(dt1);
+
+        // let newDate = new Date("2022-09-30");
+        // console.log(newDate);
+
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, miliseconds)
+        let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("The Year is ", yr);
+
+        let dt = newDate.getDate();
+        console.log("The Year is ", dt);
+
+        let month = newDate.getMonth();
+        console.log("The Year is ", month);
+
+        let Hours = newDate.getHours();
+        console.log("The Year is ", Hours);
+
+        newDate.setDate(29);
+        console.log(newDate);
+
+        setInterval(updateTime, 1000);
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>
